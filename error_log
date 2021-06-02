@@ -1,0 +1,6 @@
+[02-Jun-2020 21:07:10 UTC] PHP Warning:  require(/home/bdrepairs/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/bdrepairs/public_html/artisan on line 18
+[02-Jun-2020 21:07:10 UTC] PHP Fatal error:  require(): Failed opening required '/home/bdrepairs/public_html/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bdrepairs/public_html/artisan on line 18
+[02-Jun-2020 21:07:19 UTC] PHP Warning:  require(/home/bdrepairs/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/bdrepairs/public_html/artisan on line 18
+[02-Jun-2020 21:07:19 UTC] PHP Fatal error:  require(): Failed opening required '/home/bdrepairs/public_html/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bdrepairs/public_html/artisan on line 18
+[02-Jun-2020 21:10:38 UTC] PHP Warning:  require(/home/bdrepairs/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/bdrepairs/public_html/artisan on line 18
+[02-Jun-2020 21:10:38 UTC] PHP Fatal error:  require(): Failed opening required '/home/bdrepairs/public_html/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/bdrepairs/public_html/artisan on line 18
