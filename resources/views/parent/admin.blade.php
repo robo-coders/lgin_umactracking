@@ -110,14 +110,6 @@
 													</div>
 												</li>
 											@endcan
-											@can('read request')
-												<li class="kt-menu__item " aria-haspopup="true"><a href="{{ route('myRequests') }}" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-analytics-2"></i><span class="kt-menu__link-text">Requests</span></a></li>
-												<li class="kt-menu__item " aria-haspopup="true"><a href="{{ route('requestorHistory') }}" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-graph"></i><span class="kt-menu__link-text">History</span></a></li>
-											@endcan
-											@can('tasks technician')
-												<li class="kt-menu__item " aria-haspopup="true"><a href="{{ route('technicianTasks') }}" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-menu"></i><span class="kt-menu__link-text">Tasks</span></a></li>
-												<li class="kt-menu__item " aria-haspopup="true"><a href="{{ route('technicianHistory') }}" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-graph"></i><span class="kt-menu__link-text">History</span></a></li>
-											@endcan
 										</ul>
 									</div>
 								</div>

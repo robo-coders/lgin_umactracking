@@ -44,7 +44,7 @@
     <!-- header-start -->
     <div class="container">
         <div class="row">
-            <div class="col-md-3 offset-md-9 text-right">
+            <div class="col-md-3 offset-md-9 mt-2 text-right">
                 <div class="btn-group">
                     <button type="button" class="btn text-white" style="background-color: #FF3414;">{{ Auth::user()->name }}</button>
                     <button type="button" class="btn dropdown-toggle" style="background-color: #FF3414;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

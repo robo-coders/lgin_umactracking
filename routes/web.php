@@ -74,9 +74,6 @@ route::get('/requestor/view/request/{id}','requestorController@viewRequestByRequ
 route::get('/requestor/edit/request/{id}','requestorController@editByRequestor')->name('editByRequestor');
 route::post('/requestor/update/request/{id}','requestorController@updateRequestByRequestor')->name('updateRequestByRequestor');
 route::post('/requestor/delete/request/','requestorController@deleteByRequestor')->name('deleteByRequestor');
-route::post('/requestor/post/request','requestorController@createRequest')->name('createRequest');
-route::get('/requestor/my/request','requestorController@myRequests')->name('myRequests');
-route::get('/requestor/my/history','requestorController@requestorHistory')->name('requestorHistory');
 
 route::get('/requestor/approve/request/{id}','requestorController@approveByRequestor')->name('approveByRequestor');
 route::get('/requestor/review/{id}','requestorController@viewReviewByRequestor')->name('viewReviewByRequestor');

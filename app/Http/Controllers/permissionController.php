@@ -6,11 +6,9 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Http\Requests\userRegisterationValidation;
 use App\Notifications\technicianNotifications;
-use App\Notifications\assignTicket;
 use Carbon\Carbon;
 use App\user;
 use App\user_info;
-use App\ticket;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 

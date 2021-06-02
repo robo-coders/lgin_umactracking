@@ -69,7 +69,7 @@
                                     Actions
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                          <a class="dropdown-item" href="{{ route('addPrefixByAdmin', ['id'=>$view->id]) }}"><i class="la la-edit"></i> Prefix</a>
+                                          <a class="dropdown-item" href="{{ route('addPrefixByAdmin', ['id'=>$view->id]) }}"><i class="la la-mars"></i> Prefix</a>
                                        @can('update admin')
                                           <a class="dropdown-item" href="{{ route('editUserByAdmin', ['id'=>$view->id]) }}"><i class="la la-edit"></i> Edit</a>
                                        @endcan
