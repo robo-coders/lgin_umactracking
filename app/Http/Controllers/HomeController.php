@@ -84,10 +84,13 @@ class HomeController extends Controller
         }
         public function deleteUserByAdmin(Request $request)
         {
+            $user = User::find($request->dell_id);
+
             $dell = User::find($request->dell_id);
             $dell->delete();
             $dell = User_info::where('user_id',$request->dell_id);
             $dell->delete();
+            $user->prefix()->delete();
             session()->flash('delete','User has been deleted successfully');
             return back();
         }

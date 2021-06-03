@@ -20,14 +20,10 @@
 	<!-- begin:: Content -->
 	
 	<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
-
 		<!--Begin::Dashboard 1-->
-
 		<!--Begin::Section-->
 		<div class="row">
-			
 			<div class="col-xl-12">
-
 				<!--begin:: Widgets/New Users-->
 				<div class="kt-portlet kt-portlet--tabs kt-portlet--height-fluid">
 					<div class="kt-portlet__head">
@@ -69,6 +65,12 @@
 													@endif	
 												</p>
 											</div>
+											@if($user->role == '2')
+											@elseif($user->role == '3')	
+												<a href="{{ route('addPrefixByAdmin', ['id'=>$user->id]) }}" class="btn btn-sm btn-label-brand btn-bold">Prefix</a>
+											@else
+												<a href="{{ route('addPrefixByAdmin', ['id'=>$user->id]) }}" class="btn btn-sm btn-label-brand btn-bold">Prefix</a>
+											@endif
 										</div>
 									@endforeach
 								</div>
@@ -88,7 +90,43 @@
 
 	<!-- end:: Content -->
 {{-- Admin Dashboard Graph Ends --}}
-
 @endrole
+@role('customer')
+	{{-- Admin Dashboard Graph Starts --}}
+	<!-- begin:: Content -->
+	
+	<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
+		<!--Begin::Dashboard 1-->
+		<!--Begin::Section-->
+		<div class="row">
+			<div class="col-xl-12">
+				<!--begin:: Widgets/New Users-->
+				<div class="kt-portlet kt-portlet--tabs kt-portlet--height-fluid">
+					<div class="kt-portlet__head">
+						<div class="kt-portlet__head-label">
+							<h3 class="kt-portlet__head-title">
+								Welcome to UmacTracking dashboard !
+							</h3>
+						</div>
+					</div>
+					<div class="kt-portlet__body">
+						<div class="tab-content">
+							<p>
+								Please use Drop Down Menu to edit / update your profile .
+							</p>
+						</div>
+					</div>
+				</div>
 
+				<!--end:: Widgets/New Users-->
+			</div>
+		</div>
+
+		<!--End::Section-->
+		<!--End::Dashboard 1-->
+	</div>
+
+	<!-- end:: Content -->
+{{-- Admin Dashboard Graph Ends --}}
+@endrole
 @endsection

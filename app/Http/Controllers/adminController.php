@@ -45,6 +45,7 @@ class adminController extends Controller
     {
 
         //Check permissions
+            // return Auth::user()->roles->pluck('name');
             // return Auth()->user()->getDirectPermissions();
             // return Auth()->user()->getPermissionsViaRoles();
             // return Auth()->user()->getAllPermissions();
@@ -68,6 +69,7 @@ class adminController extends Controller
         $new_users = User::latest('created_at')
         ->take(5)
         ->with('infos')
+        ->where('id', '!=', Auth::id())
         ->get();
         return view('admin.dashboard',compact('new_users'));
     }
@@ -81,11 +83,7 @@ class adminController extends Controller
         ->get();
         $emails = email_notification::where('user_id',Auth::user()->id)
         ->get();
-        $request_timeline = Ticket_timeline::where('id','1')
-        ->get();
-        $request_alert = Ticket_alert::where('id','1')
-        ->get();
-        return view('users.edit_my_profile',compact('users','dbs','emails','request_timeline','request_alert'));
+        return view('users.edit_my_profile',compact('users','dbs','emails'));
     }
     public function updateMyAccount(Request $request, $id)
     {
