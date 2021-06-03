@@ -748,6 +748,53 @@
         ]
     },
     {
+        "name": "fmrestor/fmrestor",
+        "version": "19.0.3",
+        "version_normalized": "19.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/24u/fmRESTor.php.git",
+            "reference": "a3ede290cfe358c7295ae5e682ce99ca54a0a4ce"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/24u/fmRESTor.php/zipball/a3ede290cfe358c7295ae5e682ce99ca54a0a4ce",
+            "reference": "a3ede290cfe358c7295ae5e682ce99ca54a0a4ce",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0"
+        },
+        "time": "2021-02-22T09:43:06+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "fmRESTor\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0"
+        ],
+        "description": "fmRESTor is an object-based PHP library developed to seamlessly interact with databases and custom apps hosted on a FileMaker Server via the new powerful FileMaker Data API from within a PHP code.",
+        "homepage": "https://24usoftware.com/fmrestor",
+        "keywords": [
+            "FileMaker",
+            "api",
+            "filemaker-17",
+            "filemaker-17-api",
+            "filemaker-18",
+            "filemaker-18-api",
+            "filemaker-api",
+            "filemaker-dataapi",
+            "filemaker-databases",
+            "filemaker17",
+            "filemaker18",
+            "php"
+        ]
+    },
+    {
         "name": "fruitcake/laravel-cors",
         "version": "v1.0.6",
         "version_normalized": "1.0.6.0",
@@ -867,7 +914,8 @@
             "data",
             "faker",
             "fixtures"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "guzzlehttp/guzzle",
@@ -2659,7 +2707,8 @@
         "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
         "keywords": [
             "tokenizer"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "phpunit/phpunit",
@@ -5678,12 +5727,12 @@
         "version_normalized": "1.8.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/webmozart/assert.git",
+            "url": "https://github.com/webmozarts/assert.git",
             "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/webmozart/assert/zipball/ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
+            "url": "https://api.github.com/repos/webmozarts/assert/zipball/ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
             "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
             "shasum": ""
         },

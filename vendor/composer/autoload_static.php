@@ -41,6 +41,10 @@ class ComposerStaticInit135682f5eb5cfd0c827a7a64d7770b8a
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'f' => 
+        array (
+            'fmRESTor\\' => 9,
+        ),
         'X' => 
         array (
             'XdgBaseDir\\' => 11,
@@ -178,6 +182,10 @@ class ComposerStaticInit135682f5eb5cfd0c827a7a64d7770b8a
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'fmRESTor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fmrestor/fmrestor/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -471,12 +479,8 @@ class ComposerStaticInit135682f5eb5cfd0c827a7a64d7770b8a
     );
 
     public static $classMap = array (
-        'App\\Area_list' => __DIR__ . '/../..' . '/app/Area_list.php',
-        'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
-        'App\\Category_detail' => __DIR__ . '/../..' . '/app/Category_detail.php',
         'App\\Console\\Commands\\EventExpiryAlert' => __DIR__ . '/../..' . '/app/Console/Commands/EventExpiryAlert.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
-        'App\\Custom_event' => __DIR__ . '/../..' . '/app/Custom_event.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -489,8 +493,6 @@ class ComposerStaticInit135682f5eb5cfd0c827a7a64d7770b8a
         'App\\Http\\Controllers\\adminController' => __DIR__ . '/../..' . '/app/Http/Controllers/adminController.php',
         'App\\Http\\Controllers\\manifestController' => __DIR__ . '/../..' . '/app/Http/Controllers/manifestcontroller.php',
         'App\\Http\\Controllers\\permissionController' => __DIR__ . '/../..' . '/app/Http/Controllers/permissionController.php',
-        'App\\Http\\Controllers\\requestorController' => __DIR__ . '/../..' . '/app/Http/Controllers/requestorController.php',
-        'App\\Http\\Controllers\\technicianController' => __DIR__ . '/../..' . '/app/Http/Controllers/technicianController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -502,8 +504,6 @@ class ComposerStaticInit135682f5eb5cfd0c827a7a64d7770b8a
         'App\\Http\\Requests\\requestorRequestValidation' => __DIR__ . '/../..' . '/app/Http/Requests/requestorRequestValidation.php',
         'App\\Http\\Requests\\technicianReview' => __DIR__ . '/../..' . '/app/Http/Requests/technicianReview.php',
         'App\\Http\\Requests\\userRegisterationValidation' => __DIR__ . '/../..' . '/app/Http/Requests/userRegisterationValidation.php',
-        'App\\Machine_list' => __DIR__ . '/../..' . '/app/Machine_list.php',
-        'App\\Manufacturer_list' => __DIR__ . '/../..' . '/app/Manufacturer_list.php',
         'App\\Notifications\\approveNotificationToTechnician' => __DIR__ . '/../..' . '/app/Notifications/approveNotificationToTechnician.php',
         'App\\Notifications\\approveTicketByRequestor' => __DIR__ . '/../..' . '/app/Notifications/approveTicketByRequestor.php',
         'App\\Notifications\\assignTicket' => __DIR__ . '/../..' . '/app/Notifications/assignTicket.php',
@@ -511,25 +511,15 @@ class ComposerStaticInit135682f5eb5cfd0c827a7a64d7770b8a
         'App\\Notifications\\closeTicketByTechnician' => __DIR__ . '/../..' . '/app/Notifications/closeTicketByTechnician.php',
         'App\\Notifications\\createTicket' => __DIR__ . '/../..' . '/app/Notifications/createTicket.php',
         'App\\Notifications\\technicianNotifications' => __DIR__ . '/../..' . '/app/Notifications/technicianNotifications.php',
-        'App\\Part' => __DIR__ . '/../..' . '/app/Part.php',
-        'App\\Parts_detail' => __DIR__ . '/../..' . '/app/Parts_detail.php',
+        'App\\Prefix' => __DIR__ . '/../..' . '/app/Prefix.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'App\\Sub_category' => __DIR__ . '/../..' . '/app/Sub_category.php',
-        'App\\Ticket_brs' => __DIR__ . '/../..' . '/app/Ticket_brs.php',
-        'App\\Ticket_detail' => __DIR__ . '/../..' . '/app/Ticket_detail.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'App\\db_notification' => __DIR__ . '/../..' . '/app/db_notification.php',
         'App\\email_notification' => __DIR__ . '/../..' . '/app/email_notification.php',
-        'App\\event' => __DIR__ . '/../..' . '/app/event.php',
-        'App\\history' => __DIR__ . '/../..' . '/app/history.php',
-        'App\\review' => __DIR__ . '/../..' . '/app/review.php',
-        'App\\ticket' => __DIR__ . '/../..' . '/app/ticket.php',
-        'App\\ticket_alert' => __DIR__ . '/../..' . '/app/ticket_alert.php',
-        'App\\ticket_timeline' => __DIR__ . '/../..' . '/app/ticket_timeline.php',
         'App\\user_info' => __DIR__ . '/../..' . '/app/user_info.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
@@ -4793,6 +4783,7 @@ class ComposerStaticInit135682f5eb5cfd0c827a7a64d7770b8a
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'fmRESTor\\fmRESTor' => __DIR__ . '/..' . '/fmrestor/fmrestor/src/fmRESTor.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
