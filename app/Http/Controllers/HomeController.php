@@ -6,8 +6,6 @@ use Auth;
 use App\user;
 use App\Prefix;
 use App\user_info;
-use App\ticket_alert;
-use App\ticket_timeline;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller

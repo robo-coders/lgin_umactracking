@@ -8,17 +8,11 @@ use Hash;
 use Illuminate\Http\Request;
 use App\Http\Requests\userRegisterationValidation;
 use App\Notifications\technicianNotifications;
-use App\Notifications\assignTicket;
 use Carbon\Carbon;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 use App\user;
 use App\user_info;
-use App\ticket;
-use App\event;
-use App\Custom_event;
-use App\ticket_timeline;
-use App\ticket_alert;
 use App\db_notification;
 use App\email_notification;
 
@@ -171,23 +165,7 @@ class adminController extends Controller
         session()->flash('message','Congrats! Your Notification settings has been updated successfully');
 
     }
-    public function requestorDashboard()
-    {
-        $requests = ticket::where('user_id','=',Auth::user()->id)
-        ->where('status','=','3')
-        ->with('ticketHistory')
-        ->latest('created_at')
-        ->get();
-        return view('requestor.dashboard',compact('requests'));
-    }
-    public function technicianDashboard()
-    {
-        $tickets = ticket::where('status','=','1')
-        ->with('requestor')
-        ->get();
-
-        return view('technician.dashboard',compact('tickets'));
-    }
+   
     public function createUserByAdmin(userRegisterationValidation $request)
     {
         $store = new user();
@@ -202,10 +180,10 @@ class adminController extends Controller
             $user->assignRole('admin');
         }
         elseif($store->role == '2'){
-            $user->assignRole('requestor');
+            $user->assignRole('admin');
         }
         elseif($store->role == '3'){
-            $user->assignRole('technician');
+            $user->assignRole('customer');
         }
         //Second Model
         $user_id = $store->id;
