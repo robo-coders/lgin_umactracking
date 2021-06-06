@@ -31,60 +31,62 @@
                <!--begin::Section-->
                <div class="kt-section">
                   <div class="kt-section__content">
-                     <table class="table">
-                        <thead>
-                           <tr>
-                              <th>#</th>
-                              <th>Avatar</th>
-                              <th>First Name</th>
-                              <th>Last Name</th>
-                              <th>Address</th>
-                              <th>Contact</th>
-                              <th>Email</th>
-                              <th> </th>
-                           </tr>
-                        </thead>
-                        <?php $serial = 1; ?>								
-                        @foreach ($views as $view)	
-                        <tbody>
-                           <tr>
-                              <th scope="row">{{$serial}}</th>
-                                 @foreach ($view->infos as $info)
-                                    @if(isset($info->avatar))
-                                    <td><img src="{{ url($info->avatar) }}" alt="{{ $view->name }}" class="img-circle" width="50px" height="50px"></td>
-                                    @else
-                                    <td><img src="{{asset('/extras/dummy.png')}}" alt="{{ $view->name }}" class="img-circle" width="50px" height="50px"></td>
-                                    @endif
-                                 @endforeach
-                                 <td>{{$view->name}}</td>
+                     <div class="table-responsive">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <th>#</th>
+                                 <th>Avatar</th>
+                                 <th>First Name</th>
+                                 <th>Last Name</th>
+                                 <th>Address</th>
+                                 <th>Contact</th>
+                                 <th>Email</th>
+                                 <th> </th>
+                              </tr>
+                           </thead>
+                           <?php $serial = 1; ?>								
+                           @foreach ($views as $view)	
+                           <tbody>
+                              <tr>
+                                 <th scope="row">{{$serial}}</th>
                                     @foreach ($view->infos as $info)
-                                       <td>{{$info->last_name}}</td>
-                                       <td>{{$info->address}}</td>
-                                       <td>{{$info->contact}}</td>
+                                       @if(isset($info->avatar))
+                                       <td><img src="{{ url($info->avatar) }}" alt="{{ $view->name }}" class="img-circle" width="50px" height="50px"></td>
+                                       @else
+                                       <td><img src="{{asset('/extras/dummy.png')}}" alt="{{ $view->name }}" class="img-circle" width="50px" height="50px"></td>
+                                       @endif
                                     @endforeach
-                                 <td>{{$view->email}}</td>
-                              <td>
-                                 <div class="dropdown">
-                                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Actions
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                          <a class="dropdown-item" href="{{ route('addPrefixByAdmin', ['id'=>$view->id]) }}"><i class="la la-mars"></i> Prefix</a>
-                                       @can('update admin')
-                                          <a class="dropdown-item" href="{{ route('editUserByAdmin', ['id'=>$view->id]) }}"><i class="la la-edit"></i> Edit</a>
-                                       @endcan
-                                       @can('delete admin')
-                                          <a class="dropdown-item" href="#" data-dell_id="{{$view->id}}" data-toggle="modal" data-target="#deleteUserByAdmin"><i class="la la-trash-o"></i> Delete</a>
-                                       @endcan
+                                    <td>{{$view->name}}</td>
+                                       @foreach ($view->infos as $info)
+                                          <td>{{$info->last_name}}</td>
+                                          <td>{{$info->address}}</td>
+                                          <td>{{$info->contact}}</td>
+                                       @endforeach
+                                    <td>{{$view->email}}</td>
+                                 <td>
+                                    <div class="dropdown">
+                                       <button class="btn btn-danger btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       Actions
+                                       </button>
+                                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                             <a class="dropdown-item" href="{{ route('addPrefixByAdmin', ['id'=>$view->id]) }}"><i class="la la-mars"></i> Prefix</a>
+                                          @can('update admin')
+                                             <a class="dropdown-item" href="{{ route('editUserByAdmin', ['id'=>$view->id]) }}"><i class="la la-edit"></i> Edit</a>
+                                          @endcan
+                                          @can('delete admin')
+                                             <a class="dropdown-item" href="#" data-dell_id="{{$view->id}}" data-toggle="modal" data-target="#deleteUserByAdmin"><i class="la la-trash-o"></i> Delete</a>
+                                          @endcan
+                                          </div>
                                        </div>
                                     </div>
-                                 </div>
-                              </td>
-                           </tr>
-                        </tbody>
-                  <?php $serial++ ?>
-                  @endforeach
-                  </table>
+                                 </td>
+                              </tr>
+                           </tbody>
+                           <?php $serial++ ?>
+                           @endforeach
+                        </table>
+                     </div>
                </div>
             </div>
             <!--end::Section-->

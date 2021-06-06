@@ -15,6 +15,7 @@ use App\user;
 use App\user_info;
 use App\db_notification;
 use App\email_notification;
+use App\Notifications\UserCreated;
 
 class adminController extends Controller
 {
@@ -203,14 +204,18 @@ class adminController extends Controller
             $store2->save();
         }
             $store2->save();
-            //Email Notifications Model
-            $store = new email_notification();
-            $store->user_id = $user_id;
-            $store->save();
-            //DB Notifications Model
-            $store = new db_notification();
-            $store->user_id = $user_id;
-            $store->save();
+            // //Email Notifications Model
+            // $store = new email_notification();
+            // $store->user_id = $user_id;
+            // $store->save();
+            // //DB Notifications Model
+            // $store = new db_notification();
+            // $store->user_id = $user_id;
+            // $store->save();
+
+            $user->notify(new UserCreated($user, $pswd));
+
+
             session()->flash('message','User has been created successfully');
             return back();
 

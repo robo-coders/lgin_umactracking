@@ -7,24 +7,22 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class approveTicketByRequestor extends Notification implements ShouldQueue
+class UserCreated extends Notification
 {
     use Queueable;
 
-    protected $ticket;
-    protected $email;
-    protected $db;
+    protected $user;
+    protected $password;
 
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct($ticket,$email,$db)
+    public function __construct($user, $password)
     {
-        $this->ticket = $ticket;
-        $this->email = $email;
-        $this->db = $db;
+        $this->user = $user;
+        $this->password = $password;
     }
 
     /**
@@ -35,15 +33,7 @@ class approveTicketByRequestor extends Notification implements ShouldQueue
      */
     public function via($notifiable)
     {
-        if($this->email->status == '1' and $this->db->status == '0'){
-            return ['mail'];
-        }
-        elseif($this->db->status == '1' and $this->email->status == '0'){
-            return ['database'];
-        }
-        elseif($this->email->status == '1' and $this->db->status == '1' ){
-            return ['mail','database'];
-        }
+        return ['mail'];
     }
 
     /**
@@ -55,9 +45,10 @@ class approveTicketByRequestor extends Notification implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line("Request# ".$this->ticket->request_id." has been appoved from your side.")
-                    ->action('Labor Tracker', url('/'))
-                    ->line('Thank you for your approval!');
+                    ->line('Your account has been created and credentials are given below:')
+                    ->line('Email:' . $this->user->email)
+                    ->line('Password:' . $this->password)
+                    ->action('Login', url('/'));
     }
 
     /**
@@ -69,7 +60,7 @@ class approveTicketByRequestor extends Notification implements ShouldQueue
     public function toArray($notifiable)
     {
         return [
-            "data" => "Request# ".$this->ticket->request_id." has been appoved from your side."
+            //
         ];
     }
 }

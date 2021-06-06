@@ -9,7 +9,7 @@
 
 		<!--end::Base Path -->
 		<meta charset="utf-8" />
-		<title>Labor Tracker | Login Page </title>
+		<title>{{ config('app.name') }} | Login Page </title>
 		<meta name="description" content="Login page example">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -64,8 +64,7 @@
 						<div class="kt-login__container">
 							<div class="kt-login__logo">
 								<a href="#">
-									<img src="{{asset('/assets/media/logos/llogo-5.png')}}" alt="Company Logo">
-                                    
+									<img src="{{asset('/assets/media/logos/logo_main.png')}}" alt="UmacTracking Logo">
 								</a>
 							</div>
 							<div class="kt-login__signin">

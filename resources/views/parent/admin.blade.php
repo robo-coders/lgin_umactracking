@@ -80,7 +80,7 @@
 					<div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
 						<div id="kt_aside_menu" class="kt-aside-menu  kt-aside-menu--dropdown " data-ktmenu-vertical="1" data-ktmenu-dropdown="1" data-ktmenu-scroll="0">
 							<ul class="kt-menu__nav ">
-							@can('create admin')
+							@hasanyrole('super admin|admin')
 								<li class="kt-menu__item  kt-menu__item--active" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon2-layers-1"></i><span class="kt-menu__link-text">Actions</span></a>
 										<div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
 											<ul class="kt-menu__subnav">
@@ -91,32 +91,13 @@
 											</ul>
 										</div>
 									</li>
-								@endcan
-								@can('read admin')
+								@endrole
+								@hasanyrole('super admin|admin')
 									<li class="kt-menu__item " aria-haspopup="true"><a href="{{ route('usersList') }}" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-group"></i><span class="kt-menu__link-text">Users</span></a></li>
-								@endcan
+								@endrole
 									<!-- begin:: Aside Menu -->
-								<div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
-									<div id="kt_aside_menu" class="kt-aside-menu  kt-aside-menu--dropdown " data-ktmenu-vertical="1" data-ktmenu-dropdown="1" data-ktmenu-scroll="0">
-										<ul class="kt-menu__nav ">
-										@can('create request')
-											<li class="kt-menu__item  kt-menu__item--active" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon2-layers-1"></i><span class="kt-menu__link-text">Actions</span></a>
-													<div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
-														<ul class="kt-menu__subnav">
-															<li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true"><span class="kt-menu__link"><span class="kt-menu__link-text">Actions</span></span></li>
-															<li class="kt-menu__item " aria-haspopup="true"><a href="{{ route('createRequestIndex') }}" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--line"><span></span></i><span class="kt-menu__link-text">Create Request</span></a></li>
-															
-														</ul>
-													</div>
-												</li>
-											@endcan
-										</ul>
-									</div>
-								</div>
-
 								<!-- end:: Aside Menu -->
 								
-								{{-- <!-- <li class="kt-menu__item " aria-haspopup="true"><a href="" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-analytics-2"></i><span class="kt-menu__link-text">Courses</span></a></li> --}}
 							</ul>
 						</div>
 					</div>
@@ -135,7 +116,7 @@
 						<div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
 							<div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile  kt-header-menu--layout-tab ">
 								<ul class="kt-menu__nav ">
-									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true"><a href="{{ url('/index') }}" class="kt-menu__link "><span class="kt-menu__link-text">Front End</span></a></li>
+									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true"><a href="{{ url('/index') }}" class="kt-menu__link "><span class="kt-menu__link-text">Tracking</span></a></li>
 								</ul>
 								<ul class="kt-menu__nav ">
 									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true"><a href="{{ route('redirectUser') }}" class="kt-menu__link "><span class="kt-menu__link-text">Dashboard</span></a></li>
@@ -236,64 +217,8 @@
 									</form>
 								</div>
 							</div>
-
-							<!--begin: Quick Actions -->
-							<div class="kt-header__topbar-item dropdown">
-								<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px" aria-expanded="true">
-									<!-- <span class="kt-header__topbar-icon"><i class="flaticon2-gear"></i></span> -->
-								</div>
-								<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl">
-									<form>
-
-										<!--begin: Head -->
-										<div class="kt-head kt-head--skin-dark" style="background-image: url({{asset('/assets/media/misc/bg-1.jpg')}})">
-											<h3 class="kt-head__title">
-												User Quick Actions
-												<span class="kt-space-15"></span>
-												<span class="btn btn-success btn-sm btn-bold btn-font-md">23 tasks pending</span>
-											</h3>
-										</div>
-										<!--end: Head -->
-									</form>
-								</div>
-							</div>
-
-							<!--end: Quick Actions -->
-
 							<!--begin: Cart -->
 						
-							<!--begin: Language bar -->
-							<div class="kt-header__topbar-item kt-header__topbar-item--langs">
-								<!-- <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
-									<span class="kt-header__topbar-icon">
-										<img class="" src="./assets/media/flags/012-uk.svg" alt="" />
-									</span>
-								</div> -->
-								<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround">
-									<ul class="kt-nav kt-margin-t-10 kt-margin-b-10">
-										<li class="kt-nav__item kt-nav__item--active">
-											<a href="#" class="kt-nav__link">
-												<span class="kt-nav__link-icon"><img src="./assets/media/flags/020-flag.svg" alt="" /></span>
-												<span class="kt-nav__link-text">English</span>
-											</a>
-										</li>
-										<li class="kt-nav__item">
-											<a href="#" class="kt-nav__link">
-												<span class="kt-nav__link-icon"><img src="./assets/media/flags/016-spain.svg" alt="" /></span>
-												<span class="kt-nav__link-text">Spanish</span>
-											</a>
-										</li>
-										<li class="kt-nav__item">
-											<a href="#" class="kt-nav__link">
-												<span class="kt-nav__link-icon"><img src="./assets/media/flags/017-germany.svg" alt="" /></span>
-												<span class="kt-nav__link-text">German</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<!--end: Language bar -->
 
 						<!--begin: User Bar -->
 						<div class="kt-header__topbar-item kt-header__topbar-item--user">

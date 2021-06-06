@@ -42,6 +42,6 @@ class User extends Authenticatable
     }
     public function prefix()
     {
-        return $this->hasOne(Prefix::class);
+        return $this->hasMany(Prefix::class);
     }
 }

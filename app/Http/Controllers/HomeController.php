@@ -29,17 +29,7 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public function run()
-    {
-        $store = new Ticket_timeline();
-        $store->days = '7';
-        $store->save();
-        $store = new Ticket_alert();
-        $store->days = '1';
-        $store->save();
-        session()->flash('message','Congrats ! your system is ready to use now');
-        return back();
-    }
+   
     public function registerationByAdmin()
     {
         return view('users.registeration');
@@ -96,7 +86,9 @@ class HomeController extends Controller
         }
         public function addPrefixByAdmin($id)
         {
-            $user = User::where('id', $id)->first();
+            $user = User::where('id', $id)
+            ->with('prefix')
+            ->first();
             return view('prefix.index',["user" => $user]);
         }
         public function attachPrefix(Request $request)
@@ -107,9 +99,8 @@ class HomeController extends Controller
             ]);
             return redirect()->back()->with('success', 'Prefix has been attached.');
         }
-        public function updatePrefix(Request $request,$id)
+        public function updatePrefix(Request $request,Prefix $prefix)
         {
-            $prefix = Prefix::firstOrNew(['user_id' => $id]); 
             // update record
             $prefix->prefix = $request->prefix;
             $prefix->save();

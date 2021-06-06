@@ -15,7 +15,7 @@
    <div class="alert-text"> {{session()->get('delete')}}</div>
 </div>
 @endif	
-@role('super admin')
+@hasanyrole('super admin|admin')
 	{{-- Admin Dashboard Graph Starts --}}
 	<!-- begin:: Content -->
 	
@@ -105,15 +105,36 @@
 					<div class="kt-portlet__head">
 						<div class="kt-portlet__head-label">
 							<h3 class="kt-portlet__head-title">
-								Welcome to UmacTracking dashboard !
+								My Prefix List
 							</h3>
 						</div>
 					</div>
 					<div class="kt-portlet__body">
 						<div class="tab-content">
-							<p>
-								Please use Drop Down Menu to edit / update your profile .
-							</p>
+							@if(count(auth()->user()->prefix))
+								<table class="table">
+								<thead>
+										<tr>
+											<th>#</th>
+											<th>Title </th>
+										</tr>
+								</thead>
+								<tbody>
+									@foreach (auth()->user()->prefix as $key => $prefix)
+										<tr>
+											<td>
+											{{ $loop->iteration }}
+											</td>
+											<td>
+												{{ $prefix->prefix }}
+											</td>
+										</tr>
+										@endforeach
+								</tbody>
+								</table>
+							@else
+								<p class="font-weight-bold" align="center"> Currently no prefix exists</p>   
+							@endif
 						</div>
 					</div>
 				</div>

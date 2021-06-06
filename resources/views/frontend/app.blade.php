@@ -88,11 +88,7 @@
                             <input class="form-control" name="boxno" type="text" placeholder="BOX NUMBER" autofocus required=""  oninvalid="this.setCustomValidity('Please Enter box number')"
                         oninput="setCustomValidity('')">
                         </div>
-                        <div class="col-md px-1 mb-3">
-                            <input class="form-control" name="lname" type="text" placeholder="LAST NAME" required=""  oninvalid="this.setCustomValidity('Please Enter last name')"
-                        oninput="setCustomValidity('')">
-                        </div>
-                        <div class="col-md-3 px-1">
+                        <div class="col-md-3 col-md-offset-3 px-1">
                             <button class="btn text-white btn-block px-4" style="background-color: #FF3414;" type="submit">Search</button>
                         </div>
                     </form>
