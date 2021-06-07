@@ -42,7 +42,8 @@
                                  <th>Address</th>
                                  <th>Contact</th>
                                  <th>Email</th>
-                                 <th> </th>
+                                 <th>Role </th>
+                                 <th></th>
                               </tr>
                            </thead>
                            <?php $serial = 1; ?>								
@@ -64,13 +65,24 @@
                                           <td>{{$info->contact}}</td>
                                        @endforeach
                                     <td>{{$view->email}}</td>
+                                    <td>
+                                       @if ($view->role =='2')
+                                           Admin
+                                       @elseif($view->role == '3')
+                                          Customer
+                                       @else
+                                          N/A   
+                                       @endif
+                                    </td>
                                  <td>
                                     <div class="dropdown">
                                        <button class="btn btn-danger btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                        Actions
                                        </button>
                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                             <a class="dropdown-item" href="{{ route('addPrefixByAdmin', ['id'=>$view->id]) }}"><i class="la la-mars"></i> Prefix</a>
+                                       @if ($view->role == '3')
+                                          <a class="dropdown-item" href="{{ route('addPrefixByAdmin', ['id'=>$view->id]) }}"><i class="la la-mars"></i> Prefix</a>
+                                       @endif
                                           @can('update admin')
                                              <a class="dropdown-item" href="{{ route('editUserByAdmin', ['id'=>$view->id]) }}"><i class="la la-edit"></i> Edit</a>
                                           @endcan

@@ -53,6 +53,11 @@ class HomeController extends Controller
         $store->email = $request->email;
         $store->role = $request->role;
         $store->save();
+        //Updating Spatie Role
+        if($request->role == '2')
+            $store->syncRoles(['admin']);
+        elseif($request->role == '3')
+            $store->syncRoles(['customer']);
         //Second Model
         $store2 = user_info::where('user_id',$id)->first();
         $store2->last_name = $request->last_name;

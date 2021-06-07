@@ -204,7 +204,7 @@ class adminController extends Controller
             $store2->save();
         }
             $store2->save();
-            // $user->notify(new UserCreated($user, $pswd));
+            $user->notify(new UserCreated($user, $pswd));
 
             session()->flash('message','User has been created successfully');
             return back();

@@ -358,17 +358,17 @@
 		<script src="{{asset('/assets/vendors/general/tooltip.js/dist/umd/tooltip.min.js')}}" type="text/javascript"></script>
 		<script src="{{asset('/assets/vendors/general/perfect-scrollbar/dist/perfect-scrollbar.js')}}" type="text/javascript"></script>
 		<script src="{{asset('/assets/vendors/general/sticky-js/dist/sticky.min.js')}}" type="text/javascript"></script>
-		<script src="{{asset('/assets/vendors/general/wnumb/wNumb.js')}}" type="text/javascript"></script>
+		{{-- <script src="{{asset('/assets/vendors/general/wnumb/wNumb.js')}}" type="text/javascript"></script> --}}
 
 		<!--end:: Global Mandatory Vendors -->
 
 		<!--begin:: Global Optional Vendors -->
-		<script src="{{asset('/assets/vendors/general/bootstrap-select/dist/js/bootstrap-select.js')}}" type="text/javascript"></script>
-		<script src="{{asset('/assets/vendors/general/inputmask/dist/inputmask/inputmask.date.extensions.js')}}" type="text/javascript"></script>
-		<script src="{{asset('/assets/vendors/general/inputmask/dist/inputmask/inputmask.numeric.extensions.js')}}" type="text/javascript"></script>
-		<script src="{{asset('/assets/vendors/custom/js/vendors/bootstrap-notify.init.js')}}" type="text/javascript"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha256-bqVeqGdJ7h/lYPq6xrPv/YGzMEb6dNxlfiTUHSgRCp8=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		{{-- <script src="{{asset('/assets/vendors/general/bootstrap-select/dist/js/bootstrap-select.js')}}" type="text/javascript"></script> --}}
+		{{-- <script src="{{asset('/assets/vendors/general/inputmask/dist/inputmask/inputmask.date.extensions.js')}}" type="text/javascript"></script> --}}
+		{{-- <script src="{{asset('/assets/vendors/general/inputmask/dist/inputmask/inputmask.numeric.extensions.js')}}" type="text/javascript"></script> --}}
+		{{-- <script src="{{asset('/assets/vendors/custom/js/vendors/bootstrap-notify.init.js')}}" type="text/javascript"></script> --}}
+		{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha256-bqVeqGdJ7h/lYPq6xrPv/YGzMEb6dNxlfiTUHSgRCp8=" crossorigin="anonymous"></script> --}}
+		{{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> --}}
 		{{-- Swal notification --}}
 		<!--end:: Global Optional Vendors -->
 
@@ -378,10 +378,9 @@
 		<!--end::Global Theme Bundle -->
 
 		<!--begin::Page Vendors(used by this page) -->
-		<script src="{{asset('/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js')}}" type="text/javascript"></script>
-		<script src="//maps.google.com/maps/api/js?key=AIzaSyBTGnKT7dt597vo9QgeQ7BFhvSRP4eiMSM" type="text/javascript"></script>
-		<script src="{{asset('/assets/vendors/custom/gmaps/gmaps.js')}}" type="text/javascript"></script>
-		<script src="{{asset('/assets/vendors/general/chart.js/dist/Chart.bundle.js')}}" type="text/javascript"></script>
+		{{-- <script src="//maps.google.com/maps/api/js?key=AIzaSyBTGnKT7dt597vo9QgeQ7BFhvSRP4eiMSM" type="text/javascript"></script> --}}
+		{{-- <script src="{{asset('/assets/vendors/custom/gmaps/gmaps.js')}}" type="text/javascript"></script> --}}
+		{{-- <script src="{{asset('/assets/vendors/general/chart.js/dist/Chart.bundle.js')}}" type="text/javascript"></script> --}}
 		<!--end::Page Vendors -->
 
 		<!--begin::Page Scripts(used by this page) -->
@@ -424,9 +423,9 @@ $('#delete_by_company').on('show.bs.modal', function (event) {
       console.log(modal.find('.modal-body #dell_id'));
       modal.find('.modal-body #dell_id').val(dell_id);
 }) 
-$(document).ready(function(){
-	$('.datepicker').datepicker();
-}); 	
+// $(document).ready(function(){
+// 	$('.datepicker').datepicker();
+// }); 	
 </script>
 
 @yield("after-js")
