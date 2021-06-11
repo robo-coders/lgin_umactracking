@@ -17,14 +17,17 @@ class manifestController extends Controller
 
         $fm = new fmRESTor("fms.umacbox.info", "uph_sys_dev", "dapi-manifest", "dapi", "webaccess@fm181");
 
+
+
+
+
         // $parameters = array(
         //     "_limit"=>5
         // );
         //  $resp = $fm->getRecords($parameters);
 
         $request->validate([
-
-        // "boxno"     =>  ["required", new PrefixRule()]
+            "boxno"     =>  ["required", new PrefixRule()]
         ]);
 
         

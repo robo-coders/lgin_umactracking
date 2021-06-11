@@ -1,5 +1,5 @@
 <?php
-namespace App\Rules;
+namespace App\Rule;
 
 use Illuminate\Contracts\Validation\Rule;
 use Carbon\Carbon;
@@ -25,7 +25,14 @@ class PrefixRule implements Rule
      */
     public function passes($attribute, $value)
     {
-        return Auth()->user()->prefix === substr($value, 0, 2);
+
+        $prefix_arr = [];
+        $prefixes = Auth()->user()->prefix;
+        foreach($prefixes as $pre){
+            array_push($prefix_arr, $pre->prefix); 
+        }
+        $chunk =    strtolower(substr($value, 0, 2));
+        return in_array($chunk, $prefix_arr);
     }
 
     /**
@@ -35,7 +42,7 @@ class PrefixRule implements Rule
      */
     public function message()
     {
-        return 'This must be uppercase';
+        return 'Invalid Prefix';
     }
 }
 ?>
