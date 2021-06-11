@@ -7,6 +7,8 @@ use Carbon\Carbon;
 use App\manifest;
 use fmRESTor\fmRESTor;
 use Illuminate\Support\Facades\DB;
+use App\Rule\PrefixRule;
+
 class manifestController extends Controller
 {
     public function search(Request $request)
@@ -15,13 +17,17 @@ class manifestController extends Controller
 
         $fm = new fmRESTor("fms.umacbox.info", "uph_sys_dev", "dapi-manifest", "dapi", "webaccess@fm181");
 
-
         // $parameters = array(
         //     "_limit"=>5
         // );
         //  $resp = $fm->getRecords($parameters);
 
+        $request->validate([
 
+        // "boxno"     =>  ["required", new PrefixRule()]
+        ]);
+
+        
         $records = [];
         $final_records = [];
         $recordIds = [];
@@ -32,7 +38,7 @@ class manifestController extends Controller
             "query" => array(
                 array(
                     "InvoiceNum" => $request->boxno,
-                    "ConsLast" => $request->lname
+                    //"ConsLast" => $request->lname
                 )
             )
         );
@@ -47,7 +53,7 @@ class manifestController extends Controller
             "query" => array(
                 array(
                     "InvoiceNum" => $request->boxno,
-                    "Manifest_Customers::LastName" => $request->lname
+                    //"Manifest_Customers::LastName" => $request->lname
                 )
             )
         );
