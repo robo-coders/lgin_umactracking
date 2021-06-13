@@ -12,7 +12,7 @@
                 <p align="center"> {{$view->CtrlNumUS}}</p>
                 @if(isset($view->DateDelivered))
                     <div class="d-flex justify-content-center">
-                    <img src="{{asset('img/check.jpg')}}" width="80px" height="65px" alt="Done">
+                    <img src="{{asset('frontend/img/check.jpg')}}" width="80px" height="65px" alt="Done">
                     </div>
                     <p align="center" style="font-size:17px;letter-spacing:2px;">Delivered</p>
                     <p class="negative-pedding" align="center">{{$view->DateDelivered}}</p>
