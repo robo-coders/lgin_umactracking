@@ -4,3 +4,83 @@
 [02-Jun-2020 21:07:19 UTC] PHP Fatal error:  require(): Failed opening required '/home/bdrepairs/public_html/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bdrepairs/public_html/artisan on line 18
 [02-Jun-2020 21:10:38 UTC] PHP Warning:  require(/home/bdrepairs/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/bdrepairs/public_html/artisan on line 18
 [02-Jun-2020 21:10:38 UTC] PHP Fatal error:  require(): Failed opening required '/home/bdrepairs/public_html/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/bdrepairs/public_html/artisan on line 18
+[13-Jun-2021 11:29:39 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 11:29:39 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 11:29:39 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 11:29:39 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 11:29:39 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 14
+[13-Jun-2021 11:29:39 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 34
+[13-Jun-2021 11:29:44 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 11:29:44 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 11:29:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 11:29:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 11:29:44 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 14
+[13-Jun-2021 11:29:44 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 34
+[13-Jun-2021 11:29:52 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 11:29:52 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 11:29:52 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 11:29:52 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 11:29:52 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 14
+[13-Jun-2021 11:29:52 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 34
+[13-Jun-2021 11:29:57 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 11:29:57 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 11:29:57 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 11:29:57 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 11:29:57 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 14
+[13-Jun-2021 11:29:57 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 34
+[13-Jun-2021 22:28:10 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:28:10 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:28:10 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:28:10 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:28:10 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 14
+[13-Jun-2021 22:28:10 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 34
+[13-Jun-2021 22:28:19 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:28:19 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:28:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:28:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:28:19 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 14
+[13-Jun-2021 22:28:19 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 34
+[13-Jun-2021 22:28:34 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:28:34 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:28:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:28:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:28:34 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 14
+[13-Jun-2021 22:28:34 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/umactrac/public_html/login/vendor/ramsey/uuid/src/functions.php on line 34
+[13-Jun-2021 22:29:09 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:29:09 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:29:09 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:29:09 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:29:09 UTC] PHP Warning:  require(/home/umactrac/public_html/login/vendor/composer/../ramsey/uuid/src/functions.php): failed to open stream: No such file or directory in /home/umactrac/public_html/login/vendor/composer/autoload_real.php on line 69
+[13-Jun-2021 22:29:09 UTC] PHP Fatal error:  require(): Failed opening required '/home/umactrac/public_html/login/vendor/composer/../ramsey/uuid/src/functions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/umactrac/public_html/login/vendor/composer/autoload_real.php on line 69
+[13-Jun-2021 22:31:31 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:31:31 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:31:31 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:31:31 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:32:05 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:32:05 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:32:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:32:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:32:56 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:32:56 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:32:56 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite.so' (tried: /opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so (/opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory), /opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so.so (/opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[13-Jun-2021 22:32:56 UTC] PHP Warning:  Module 'pdo_mysql' already loaded in Unknown on line 0
+[13-Jun-2021 22:33:00 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:33:00 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:33:00 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:33:00 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:33:44 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:33:44 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:33:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:33:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:34:22 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:34:22 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:34:22 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite.so' (tried: /opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so (/opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory), /opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so.so (/opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[13-Jun-2021 22:34:22 UTC] PHP Warning:  Module 'pdo_mysql' already loaded in Unknown on line 0
+[13-Jun-2021 22:35:54 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:35:54 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:35:54 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite.so' (tried: /opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so (/opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory), /opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so.so (/opt/cpanel/ea-php72/root/usr/lib64/php/modules/sqlite.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[13-Jun-2021 22:35:54 UTC] PHP Warning:  Module 'pdo_mysql' already loaded in Unknown on line 0
+[13-Jun-2021 22:51:18 UTC] PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+[13-Jun-2021 22:51:18 UTC] PHP Warning:  Module 'pdo_sqlite' already loaded in Unknown on line 0
+[13-Jun-2021 22:51:18 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/sqlite.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Jun-2021 22:51:18 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so' - /opt/cpanel/ea-php56/root/usr/lib64/php/modules/pdo_mysql.so: cannot open shared object file: No such file or directory in Unknown on line 0
