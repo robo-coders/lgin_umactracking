@@ -16,7 +16,7 @@ class manifestController extends Controller
 
 
         // $fm = new fmRESTor("fms.umacbox.info", "uph_sys_dev", "dapi-manifest", "dapi", "webaccess@fm181");
-        $fm = new fmRESTor("fms.umacbox.info", "uph_sys_dev", "dapi-manifest", "dapi", "webaccess@fm181");
+        $fm = new fmRESTor("uph.umacbox.info", "uph_sys", "dapi-manifest", "dapi", "webaccess@fm181");
 
 
 
