@@ -25,14 +25,23 @@ class PrefixRule implements Rule
      */
     public function passes($attribute, $value)
     {
-
+        $return = false;
         $prefix_arr = [];
         $prefixes = Auth()->user()->prefix;
         foreach($prefixes as $pre){
             array_push($prefix_arr, $pre->prefix); 
         }
         $chunk =    strtolower(substr($value, 0, 2));
-        return in_array($chunk, $prefix_arr);
+        if(in_array($chunk, $prefix_arr)){
+            $return = true;
+        }else{
+            $chunk =    strtolower(substr($value, 0, 3));
+            if(in_array($chunk, $prefix_arr)){
+                $return = true;
+            }
+        }
+        
+        return $return;
     }
 
     /**
