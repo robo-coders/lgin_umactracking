@@ -182,7 +182,11 @@
                                         {{ date("d M, Y",strtotime($view->OutForDelivDate)) }}
                                     </td>
                                     <td>
-                                    Out for delivery
+                                    @if(isset($view->DateETAVismin))
+                                       Dispatch to Provincial Warehouse
+                                    @else
+                                       Out for delivery
+                                    @endif
                                     </td>
                                 </tr>
                               @endif
